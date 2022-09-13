@@ -1,1 +1,1 @@
-export * from './Button';
+export { Table, Detail } from "./Monsters";
