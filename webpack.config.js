@@ -6,23 +6,26 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
-        library: '$',
-        libraryTarget: 'umd'
+        libraryTarget: 'umd',
+        library: '@JVallejoMe/react-webpack-library'
     },
     module: {
         rules: [
             {
+                test: /\.css/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
+                use: ['babel-loader', 'ts-loader'],
                 exclude: /node_modules/
             }
         ]
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+    },
     externals: {
         react: 'react'
-    },
-    mode: 'development',
-    resolve: {
-        extensions: ['.tsx', '.ts', '.js']
     }
 };
