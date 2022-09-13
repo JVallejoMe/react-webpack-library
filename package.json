@@ -1,7 +1,7 @@
 {
     "name": "@JVallejoMe/react-webpack-library",
-    "version": "1.0.1",
-    "description": "",
+    "version": "1.0.2",
+    "description": "Library Webpack",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "files": [
@@ -14,18 +14,18 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@emotion/styled": "^11.10.4",
         "@types/node": "^18.7.17",
         "@types/react": "^18.0.19",
         "@types/react-dom": "^18.0.6",
         "ts-loader": "^9.3.1",
         "typescript": "^4.8.3",
         "webpack": "^5.74.0",
-        "@emotion/styled": "^11.10.4",
-        "@mui/x-data-grid": "^5.17.2",
         "webpack-cli": "^4.10.0"
     },
     "peerDependencies": {
-        "@mui/material": "^5.10.5",
+        "@mui/material": "^5.10.4",
+        "@mui/x-data-grid": "^5.17.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     }
