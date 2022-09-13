@@ -14,6 +14,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@mui/material": "^5.10.5",
         "@types/node": "^18.7.17",
         "@types/react": "^18.0.19",
         "@types/react-dom": "^18.0.6",
@@ -25,5 +26,8 @@
     "peerDependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
+    },
+    "dependencies": {
+        "@mui/x-data-grid": "^5.17.2"
     }
 }
